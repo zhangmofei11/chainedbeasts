@@ -37,6 +37,52 @@
         .card-beast { background: linear-gradient(135deg, rgba(185,28,28,0.2) 0%, rgba(41,37,36,0.95) 100%); border: 1px solid rgba(249,115,22,0.3); }
         .card-beast:hover { border-color: rgba(249,115,22,0.6); }
     </style>
+
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://chainedbeasts.world/#website",
+          "name": "Chained Beasts",
+          "url": "https://chainedbeasts.world/",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://chainedbeasts.world/beasts.html#webpage",
+          "url": "https://chainedbeasts.world/beasts.html",
+          "name": "Beast Roster - Chained Beasts",
+          "description": "Complete Chained Beasts roster with unlock conditions, abilities, evolution paths, and stats for all primal beasts.",
+          "isPartOf": {
+            "@id": "https://chainedbeasts.world/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://chainedbeasts.world/beasts.html#breadcrumb"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://chainedbeasts.world/beasts.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://chainedbeasts.world/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Beast Roster - Chained Beasts"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="text-stone-300 antialiased">
     <header class="card-beast sticky top-0 z-50 border-b border-orange-500/30">
