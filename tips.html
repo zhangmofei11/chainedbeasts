@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Tips - Chained Beasts</title>
+    <meta name="description" content="Chained Beasts battle tips and tricks: chain fragment farming, combo timing, evolution routes, ability synergy, boss patterns, and the mistakes that cost you runs.">
+    <meta name="keywords" content="Chained Beasts tips, Chained Beasts tricks, chain fragment farming, Chained Beasts combos, evolution guide, Chained Beasts boss strategy">
+    <link rel="canonical" href="https://chainedbeasts.world/tips.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        beast: { 500: '#B91C1C', 600: '#991B1B', 700: '#7F1D1D' },
+                        primal: { 400: '#F97316', 500: '#EA580C' }
+                    },
+                    fontFamily: { 'title': ['Cinzel', 'serif'], 'sans': ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GTH72BQYV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-0GTH72BQYV');
+    </script>
+    <style>
+        * { box-sizing: border-box; }
+        body { background: linear-gradient(180deg, #1c1917 0%, #292524 50%, #1c1917 100%); min-height: 100vh; font-family: 'Inter', sans-serif; }
+        .card-beast { background: linear-gradient(135deg, rgba(185,28,28,0.2) 0%, rgba(41,37,36,0.95) 100%); border: 1px solid rgba(249,115,22,0.3); }
+    </style>
+
+    <script type="application/ld+json">
+{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://chainedbeasts.world/#website",
+          "name": "Chained Beasts",
+          "url": "https://chainedbeasts.world/",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://chainedbeasts.world/tips.html#webpage",
+          "url": "https://chainedbeasts.world/tips.html",
+          "name": "Battle Tips - Chained Beasts",
+          "description": "Chained Beasts battle tips and tricks: chain fragment farming, combo timing, evolution routes, ability synergy, boss patterns, and the mistakes that cost you runs.",
+          "isPartOf": {
+            "@id": "https://chainedbeasts.world/#website"
+          },
+          "breadcrumb": {
+            "@id": "https://chainedbeasts.world/tips.html#breadcrumb"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://chainedbeasts.world/tips.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://chainedbeasts.world/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Battle Tips - Chained Beasts"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="text-stone-300 antialiased">
+    <header class="card-beast sticky top-0 z-50 border-b border-orange-500/30">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-beast-500 to-primal-500 flex items-center justify-center text-2xl">⛓️</div>
+                    <div>
+                        <span class="font-title text-2xl text-orange-400">CHAINED BEASTS</span>
+                        <span class="block text-xs text-stone-500 tracking-widest">BREAK THE CHAINS</span>
+                    </div>
+                </a>
+                <nav class="hidden lg:flex items-center gap-2 text-sm">
+                    <a href="/" class="px-3 py-2 text-stone-400 hover:text-orange-400 rounded transition-all">Home</a>
+                    <a href="walkthrough.html" class="px-3 py-2 text-stone-400 hover:text-orange-400 rounded transition-all">Walkthrough</a>
+                    <a href="beasts.html" class="px-3 py-2 text-stone-400 hover:text-orange-400 rounded transition-all">Beasts</a>
+                    <a href="tips.html" class="px-3 py-2 text-orange-400 bg-orange-500/10 rounded border border-orange-500/30">Tips</a>
+                    <a href="beginner-guide.html" class="px-3 py-2 text-stone-400 hover:text-orange-400 rounded transition-all">Beginner Guide</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <section class="text-center mb-12">
+            <h1 class="font-title text-4xl md:text-5xl text-orange-400 mb-4">BATTLE TIPS</h1>
+            <p class="text-stone-400 max-w-2xl mx-auto">How to farm, evolve and fight like someone who has broken every chain in the game</p>
+        </section>
+
+        <div class="h-0.5 bg-gradient-to-r from-transparent via-orange-500 to-transparent mb-12"></div>
+
+        <!-- Chain fragments -->
+        <section class="mb-10">
+            <h2 class="font-title text-2xl text-orange-400 mb-4">⛓️ CHAIN FRAGMENT ECONOMY</h2>
+            <div class="space-y-4">
+                <p class="text-stone-400 text-sm max-w-3xl">
+                    Chain fragments are the only currency that matters. Defeated enemies drop them, and
+                    100 fragments unlock a new evolution. Every choice in this section is really a
+                    question about whether you want that evolution soon or later.
+                </p>
+                <div class="card-beast rounded-xl p-5 overflow-x-auto">
+                    <table class="w-full text-xs min-w-[600px]">
+                        <thead>
+                            <tr class="text-left text-orange-400">
+                                <th class="py-2 pr-4">Source</th>
+                                <th class="py-2 pr-4">Fragment Value</th>
+                                <th class="py-2 pr-4">Reliability</th>
+                                <th class="py-2">Best Use</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-stone-400">
+                            <tr class="border-t border-stone-700 align-top">
+                                <td class="py-3 pr-4 text-white">Regular enemies</td>
+                                <td class="py-3 pr-4">Low, per kill</td>
+                                <td class="py-3 pr-4">High, many sources</td>
+                                <td class="py-3 pr-4">Steady top-ups between bosses</td>
+                            </tr>
+                            <tr class="border-t border-stone-700 align-top">
+                                <td class="py-3 pr-4 text-white">Elite guards</td>
+                                <td class="py-3 pr-4">Medium</td>
+                                <td class="py-3 pr-4">Medium</td>
+                                <td class="py-3 pr-4">Bridging the last 30 fragments before a boss</td>
+                            </tr>
+                            <tr class="border-t border-stone-700 align-top">
+                                <td class="py-3 pr-4 text-white">Bosses</td>
+                                <td class="py-3 pr-4">Large single payout</td>
+                                <td class="py-3 pr-4">One attempt only</td>
+                                <td class="py-3 pr-4">Unlocking an evolution right after the fight</td>
+                            </tr>
+                            <tr class="border-t border-stone-700 align-top">
+                                <td class="py-3 pr-4 text-white">Wave arenas</td>
+                                <td class="py-3 pr-4">High total</td>
+                                <td class="py-3 pr-4">Medium, heal pads between waves</td>
+                                <td class="py-3 pr-4">The fastest way to reach 100 fragments</td>
+                            </tr>
+                            <tr class="border-t border-stone-700 align-top">
+                                <td class="py-3 pr-4 text-white">Secret areas</td>
+                                <td class="py-3 pr-4">Variable</td>
+                                <td class="py-3 pr-4">Low, one-time</td>
+                                <td class="py-3 pr-4">Free progress you never have to farm again</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="grid md:grid-cols-3 gap-4">
+                    <div class="card-beast rounded-xl p-5">
+                        <h3 class="font-bold text-white mb-2">Farm Before You Fight</h3>
+                        <p class="text-stone-400 text-xs">Enter a boss fight with a full evolution slot ready. Winning with a spare evolution in reserve turns a close fight into a smooth one.</p>
+                    </div>
+                    <div class="card-beast rounded-xl p-5">
+                        <h3 class="font-bold text-white mb-2">Don't Overfarm Early</h3>
+                        <p class="text-stone-400 text-xs">Fragments banked early do nothing. Save the grind for the moment right before you need the unlock, when every point counts.</p>
+                    </div>
+                    <div class="card-beast rounded-xl p-5">
+                        <h3 class="font-bold text-white mb-2">Wave Arenas First</h3>
+                        <p class="text-stone-400 text-xs">If a chapter offers a wave trial, do it before the boss. Three waves with heal pads between them is the best fragment-per-minute source in the game.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ability synergy -->
+        <section class="mb-10">
+            <h2 class="font-title text-2xl text-orange-400 mb-4">⚔️ ABILITY SYNERGY</h2>
+            <div class="space-y-4">
+                <p class="text-stone-400 text-sm max-w-3xl">
+                    Every beast has 4 unique abilities, and the way they interact matters more than any
+                    single ability. A good combination lets one ability set up the next.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="card-beast rounded-xl p-5">
+                        <h3 class="font-bold text-white mb-2">Control Then Damage</h3>
+                        <p class="text-stone-400 text-xs mb-2">Stun or slow first, then unload. A combo that ends in a damage ability after a control ability lands far harder than two damage abilities in a row.</p>
+                        <ul class="text-stone-500 text-xs space-y-1">
+                            <li>• Alpha Wolf puncture wound forces movement, so land damage during the DoT window</li>
+                            <li>• Forest Owl evasion buys time for a slow heavy hitter to wind up</li>
+                            <li>• Iron Bear's guard holds the line so a striker can punish</li>
+                        </ul>
+                    </div>
+                    <div class="card-beast rounded-xl p-5">
+                        <h3 class="font-bold text-white mb-2">Crowd Control Pays</h3>
+                        <p class="text-stone-400 text-xs mb-2">Fights are won on the adds, not the boss. Wolves arrive in packs and bosses summon help, so area damage quietly makes every other ability stronger.</p>
+                        <ul class="text-stone-500 text-xs space-y-1">
+                            <li>• Raging Bull holds area control for grouping enemies</li>
+                            <li>• Inferno Lion's AoE ultimate clears a wave before it starts</li>
+                            <li>• Venom Drake's poison keeps working while you deal with the next target</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card-beast rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-2">Ultimate Timing</h3>
+                    <p class="text-stone-400 text-xs">
+                        Ultimates are not finishers you save for low health. They are crowd tools you
+                        use at the moment a pack spawns or a boss starts a telegraphed charge. Holding
+                        an ultimate until the boss is nearly dead usually means using it after the
+                        damage window has already passed.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution -->
+        <section class="mb-10">
+            <h2 class="font-title text-2xl text-orange-400 mb-4">🌿 EVOLUTION CHOICES</h2>
+            <div class="space-y-4">
+                <p class="text-stone-400 text-sm max-w-3xl">
+                    Your starter determines which evolutions you can reach. Choosing a path early
+                    locks you out of the others, so pick based on how you want to fight rather than
+                    which beast looks strongest.
+                </p>
+                <div class="card-beast rounded-xl p-5 overflow-x-auto">
+                    <table class="w-full text-xs min-w-[600px]">
+                        <thead>
+                            <tr class="text-left text-orange-400">
+                                <th class="py-2 pr-4">Starter</th>
+                                <th class="py-2 pr-4">Builds Toward</th>
+                                <th class="py-2 pr-4">Playstyle</th>
+                                <th class="py-2">Best For</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-stone-400">
+                            <tr class="border-t border-stone-700 align-top">
+                                <td class="py-3 pr-4 text-white">Wolf</td>
+                                <td class="py-3 pr-4">Shadow Fenrir</td>
+                                <td class="py-3 pr-4">Speed and burst</td>
+                                <td class="py-3 pr-4">Speedruns and solo clears</td>
+                            </tr>
+                            <tr class="border-t border-stone-700 align-top">
+                                <td class="py-3 pr-4 text-white">Bear</td>
+                                <td class="py-3 pr-4">Iron Bear</td>
+                                <td class="py-3 pr-4">Durability and defense</td>
+                                <td class="py-3 pr-4">New players and hard boss attempts</td>
+                            </tr>
+                            <tr class="border-t border-stone-700 align-top">
+                                <td class="py-3 pr-4 text-white">Phoenix</td>
+                                <td class="py-3 pr-4">Inferno Lion</td>
+                                <td class="py-3 pr-4">Raw damage and area control</td>
+                                <td class="py-3 pr-4">PvP and wave arenas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Boss patterns -->
+        <section class="mb-10">
+            <h2 class="font-title text-2xl text-orange-400 mb-4">⚡ BOSS PATTERN READS</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="card-beast rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-2">🦁 Inferno Lion</h3>
+                    <ul class="text-stone-500 text-xs space-y-1">
+                        <li>• Flame Swipe has long range, so back off further than feels necessary</li>
+                        <li>• The Roar is the tell. Attack during its cooldown, not after</li>
+                        <li>• Dodge the ultimate sideways rather than backwards</li>
+                        <li>• Save your burst for after the swipe misses</li>
+                    </ul>
+                </div>
+                <div class="card-beast rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-2">🐺 Alpha Wolf</h3>
+                    <ul class="text-stone-500 text-xs space-y-1">
+                        <li>• The charge is preceded by a crouch, so watch the shoulders</li>
+                        <li>• It summons the pack, so clear adds before focusing the boss</li>
+                        <li>• Puncture wound is damage over time, so keep moving instead of trading</li>
+                        <li>• Area attacks handle the pack and the boss at once</li>
+                    </ul>
+                </div>
+                <div class="card-beast rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-2">🐻 Iron Bear</h3>
+                    <ul class="text-stone-500 text-xs space-y-1">
+                        <li>• High defense means single hits feel pointless, so use combos</li>
+                        <li>• Its guard deflects frontal attacks, so flank it</li>
+                        <li>• It telegraphs a slam with a rear-up before it lands</li>
+                        <li>• Patience beats aggression, this boss punishes rushing</li>
+                    </ul>
+                </div>
+                <div class="card-beast rounded-xl p-5">
+                    <h3 class="font-bold text-white mb-2">🦅 Storm Eagle</h3>
+                    <ul class="text-stone-500 text-xs space-y-1">
+                        <li>• Ranged attacks pierce, so lining up behind cover does not help</li>
+                        <li>• It repositions constantly, so track rather than predict</li>
+                        <li>• Close the distance before using heavy abilities</li>
+                        <li>• Save an evasion ability for its dive</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mistakes -->
+        <section class="mb-10">
+            <h2 class="font-title text-2xl text-orange-400 mb-4">❌ MISTAKES THAT COST RUNS</h2>
+            <div class="card-beast rounded-xl p-5">
+                <ul class="text-stone-400 text-xs space-y-2">
+                    <li><strong class="text-white">Panic dodging into a corner:</strong> back away at an angle instead, and keep your escape route open.</li>
+                    <li><strong class="text-white">Spamming the same ability:</strong> the second and third hit in a combo do far less than the first. Vary your strings.</li>
+                    <li><strong class="text-white">Ignoring the summons:</strong> most bosses are easier when the adds are gone. Kill them first and the boss becomes a normal fight.</li>
+                    <li><strong class="text-white">Bossing without the evolution:</strong> if the boss took your last attempt, farm until the evolution is unlocked before trying again.</li>
+                    <li><strong class="text-white">Standing in the fire:</strong> area attacks that ignore hits still hit you. Watch where you are standing during your own ultimate.</li>
+                    <li><strong class="text-white">Chasing one enemy across the arena:</strong> repositioning costs time and health. Fight where the pack is.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Combat drill -->
+        <section class="mb-10">
+            <h2 class="font-title text-2xl text-orange-400 mb-4">🥊 THE COMBAT DRILL</h2>
+            <div class="card-beast rounded-xl p-5">
+                <p class="text-stone-400 text-xs mb-3">Run this five-step routine before any serious boss attempt. It fixes more failed runs than any single tip on this page.</p>
+                <ol class="text-stone-400 text-xs space-y-2 list-decimal list-inside">
+                    <li><strong class="text-white">Clear the room first.</strong> Kill every regular enemy before you touch the boss. No exceptions.</li>
+                    <li><strong class="text-white">Learn the telegraph.</strong> Watch one full attack cycle without attacking. Most bosses have a visible wind-up.</li>
+                    <li><strong class="text-white">Pick two strings.</strong> One for the boss's recovery, one for when adds appear. Do not improvise mid-fight.</li>
+                    <li><strong class="text-white">Save the ultimate for the pack.</strong> Or for the recovery window, depending on what is happening.</li>
+                    <li><strong class="text-white">Bank fragments between fights.</strong> Every boss attempt should teach you something even when you lose.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-stone-800 py-8 mt-8">
+        <div class="max-w-6xl mx-auto px-6 text-center text-stone-500 text-sm">
+            <p>&copy; 2026 Chained Beasts Guide. Game not affiliated.</p>
+        </div>
+
+    <!-- Related Articles -->
+    <section class="max-w-4xl mx-auto py-8 px-4 border-t border-amber-900">
+        <h3 class="text-xl font-bold mb-4 text-white">You Might Also Like</h3>
+        <div class="grid md:grid-cols-3 gap-4">
+        <a href="beginner-guide.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Beginner Guide - Chained Beasts</span>
+        </a>
+        <a href="beasts.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Beast Roster - Chained Beasts</span>
+        </a>
+        <a href="tierlist.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Tier List - Chained Beasts</span>
+        </a>
+        <a href="walkthrough.html" class="block p-4 bg-amber-900/30 border-amber-900 rounded hover:bg-amber-800/30 transition">
+            <span class="font-semibold text-gray-300">→ Walkthrough - Chained Beasts</span>
+        </a>
+        </div>
+    </section>
+
+    <!-- Adsterra Ads -->
+    <script async="async" data-cfasync="false" src="https://bauval.org/21/9afa3ed6fa0ac8a3ebeabe609cbdf0a6"></script>
+    <div id="container-9afa3ed6fa0ac8a3ebeabe609cbdf0a6"></div>
+
+    <script data-cfasync="false" src="https://bauval.org/14/ba71be36f8fda9b7fa28bbc7b2e9a228"></script>
+
+    <script>
+      atOptions = {
+        'key' : '5eeae7101caf5b18e2d36ff5ba59b681',
+        'format' : 'iframe',
+        'height' : 250,
+        'width' : 300,
+        'params' : {}
+      };
+    </script>
+    <script src="https://bauval.org/22/5eeae7101caf5b18e2d36ff5ba59b681"></script>
+</footer>
+</body>
+</html>
